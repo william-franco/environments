@@ -1,5 +1,10 @@
 # Add this of end the file .bashrc
 
+# PATH Environments
+
+# Refresh terminal with: source ~/.bashrc
+# Check the path with: echo $PATH
+
 # Android Studio
 export ANDROID_HOME=$HOME/Development/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
