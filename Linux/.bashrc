@@ -17,7 +17,7 @@ export FLUTTER_HOME=$HOME/Development/Flutter/bin
 export PATH=$PATH:$FLUTTER_HOME
 
 # Java home
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=$HOME/Development/Java/Oracle/jdk-17
 export PATH=$PATH:$JAVA_HOME/bin
 
 # Nodejs

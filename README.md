@@ -10,22 +10,19 @@ William Franco (Dev mobile).
 
 ```
 # Android Studio
-export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_HOME=$HOME/Development/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Flutter
-export FLUTTER_HOME=$HOME/Library/Flutter/bin
+export FLUTTER_HOME=$HOME/Development/Flutter/bin
 export PATH=$PATH:$FLUTTER_HOME
 
-# Java Home
-export JAVA_HOME=$HOME/Library/Java/JavaVirtualMachines/openjdk-17/Contents/Home
-
-# Nodejs
-export PATH=$PATH:/usr/local/bin/node
-export PATH=$PATH:/usr/local/bin/npm
+# Java home
+export JAVA_HOME=$HOME/Development/Java/Oracle/jdk-17
+export PATH=$PATH:$JAVA_HOME/bin
 ```
 
 ### Linux:
