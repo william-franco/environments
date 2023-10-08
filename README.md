@@ -4,28 +4,33 @@ Settings of PATH in Environment Variables on Mac and Linux.
 
 ## Author
 
-William Franco (Dev mobile).
+William Franco.
 
 ### Mac:
 
 ```
-# Android Studio
+# Android Studio Home
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# Flutter
+# Flutter Home
 export FLUTTER_HOME=$HOME/Library/Flutter/bin
 export PATH=$PATH:$FLUTTER_HOME
 
-# Java Home
-export JAVA_HOME=$HOME/Library/Java/JavaVirtualMachines/openjdk-17/Contents/Home
+# Dart Home
+export DART_HOME=$HOME/Library/Dart/bin
+export PATH=$PATH:$DART_HOME
 
-# Nodejs
-export PATH=$PATH:/usr/local/bin/node
-export PATH=$PATH:/usr/local/bin/npm
+# Java Home
+export JAVA_HOME=$HOME/Library/Java/JavaVirtualMachines/jdk-21/Contents/Home
+
+# NodeJs Home
+export NODEJS_HOME=$HOME/Library/NodeJs/bin
+export PATH=$NODEJS_HOME:$PATH
+
 ```
 
 ### Linux:
@@ -72,7 +77,7 @@ alias vlc="flatpak run org.videolan.VLC"
 
 MIT License
 
-Copyright (c) 2021 William Franco
+Copyright (c) 2023 William Franco
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
