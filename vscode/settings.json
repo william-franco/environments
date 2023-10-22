@@ -1,6 +1,8 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontSize": 14.5,
+    "editor.formatOnSave": true,
+    "editor.fontSize": 16,
+    // "window.zoomLevel": 1,
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
@@ -8,17 +10,28 @@
             80
         ],
         "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
     },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    }
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+            80
+        ],
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+            80
+        ],
+    },
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
 }

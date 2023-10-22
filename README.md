@@ -36,27 +36,38 @@ export PATH=$NODEJS_HOME:$PATH
 ### Linux:
 
 ```
-# Flutter home
+# Android Studio Home
+export ANDROID_HOME=$HOME/Development/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Flutter Home
 export FLUTTER_HOME=$HOME/Development/Flutter
 export PATH=$PATH:$FLUTTER_HOME/bin
 
-# Dart home
+# Dart Home
 export DART_HOME=$HOME/Development/Dart
 export PATH=$PATH:$DART_HOME/bin
 
-# Java home
-export JAVA_HOME=$HOME/Development/Java/Oracle/jdk-17
+# Java Home
+export JAVA_HOME=$HOME/Development/Java/JavaVirtualMachines/jdk-21
 export PATH=$PATH:$JAVA_HOME/bin
 
-# Mongo home
-export MONGO_HOME=$HOME/Development/Mongo
-export PATH=$PATH:$MONGO_HOME/bin
+# Kotlin Home
+export KOTLIN_HOME=$HOME/Development/Kotlin
+export PATH=$PATH:$KOTLIN_HOME/bin
 
-# NodeJs home
-export NODEJS_HOME=$HOME/Development/NodeJs/bin
+# Kotlin Native Home
+export KOTLINNATIVE_HOME=$HOME/Development/KotlinNative
+export PATH=$PATH:$KOTLINNATIVE_HOME/bin
+
+# NodeJs Home
+export NODEJS_HOME=$HOME/Development/NodeJs
 export PATH=$PATH:$NODEJS_HOME/bin
 
-# DotNet
+# DotNet home
 export DOTNET_ROOT=$HOME/Development/DotNet/
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT
 
