@@ -3,11 +3,6 @@
 Settings of PATH in Environment Variables on Mac and Linux.
 
 
-## Author
-
-William Franco.
-
-
 ### Mac:
 
 ```
