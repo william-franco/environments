@@ -1,7 +1,8 @@
 {
     "workbench.iconTheme": "material-icon-theme",
     "editor.formatOnSave": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 17.5,
+    "window.zoomLevel": 0.5,
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
@@ -33,4 +34,5 @@
         ],
     },
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "debug.toolBarLocation": "docked",
 }
