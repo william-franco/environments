@@ -40,14 +40,18 @@ export PATH=$PATH:$NODEJS_HOME/bin
 export DOTNET_ROOT=$HOME/Development/DotNet/
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT
 
+# Rust Home
+. "$HOME/.cargo/env"
+
 # Flatpaks
-alias android-studio="flatpak run com.google.AndroidStudio"
-alias chrome="flatpak run com.google.Chrome"
-alias code="flatpak run com.visualstudio.code"
-alias firefox="flatpak run org.mozilla.firefox"
-alias google-chrome="flatpak run com.google.Chrome"
-alias insomnia="flatpak run rest.insomnia.Insomnia"
-alias postman="flatpak run com.getpostman.Postman"
-alias qbittorrent="flatpak run org.qbittorrent.qBittorrent"
-alias spotify="flatpak run com.spotify.Client"
-alias vlc="flatpak run org.videolan.VLC"
+alias f-android-studio="flatpak run com.google.AndroidStudio"
+alias f-chrome="flatpak run com.google.Chrome"
+alias f-code="flatpak run com.visualstudio.code"
+alias f-firefox="flatpak run org.mozilla.firefox"
+alias f-google-chrome="flatpak run com.google.Chrome"
+alias f-insomnia="flatpak run rest.insomnia.Insomnia"
+alias f-postman="flatpak run com.getpostman.Postman"
+alias f-qbittorrent="flatpak run org.qbittorrent.qBittorrent"
+alias f-spotify="flatpak run com.spotify.Client"
+alias f-vlc="flatpak run org.videolan.VLC"
+alias f-zed="flatpak run dev.zed.Zed"
