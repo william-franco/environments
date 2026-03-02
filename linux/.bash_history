@@ -4,11 +4,15 @@ systemctl enable zram-config
 systemctl start zram-config
 sudo chmod +x necessary-verbs.sh && sudo ./necessary-verbs.sh && exit
 
+cat /proc/sys/vm/swappiness
+nano /usr/bin/init-zram-swapping
+nano /etc/sysctl.conf
+
 glxinfo | grep "OpenGL version"
 force_vk_vendor="-1" steam
 
 adb devices
-adb connect 192.168.1.7:port
+adb connect 192.168.0.0:port
 adb install -r app.apk
 
 gcc -o build app.c && ./build
@@ -18,23 +22,20 @@ dotnet new webapi -n ProjectName
 
 flutter pub run import_sorter:main lib\/* test\/*
 dart pub run import_sorter:main lib\/* test\/*
+
+# Cria um novo projeto com o nome da organização.
 flutter create --org br.com.williamfranco project_name
 
-nest new project_name
-cd project_name
-npm install prisma --save-dev
-npx prisma
-npx prisma init
-npx prisma migrate dev --name init
-npm install @prisma/client
+# Recria as pastas do projeto com o nome da organização.
+flutter create . --org br.com.williamfranco
 
-git add . && git commit -m ":rocket: Initial commit" && git push
-git add . && git commit -m ":building_construction: Adicionado arquitetura inicial do projeto" && git push
-git add . && git commit -m ":white_check_mark: Adicionado funcionalidade xyz" && git push
-git add . && git commit -m ":wrench: Corrigido uso de xyz" && git push
-git add . && git commit -m ":heavy_minus_sign: Removido xyz" && git push
-git add . && git commit -m ":memo: Ajustado imports do projeto" && git push
-git add . && git commit -m ":arrow_up: Atualizado dependencias" && git push
-git add . && git commit -m ":arrow_down: Removido dependencias" && git push
-git add . && git commit -m ":wastebasket: Removido codigo nao usado" && git push
+# Remove as pastas dos desktops
+rm -rf windows/ && rm -rf linux/ && rm -rf macos/ && rm -rf pubspec.lock
 
+# Cria um novo projeto em ASP.NET Core.
+dotnet new web -n ProjectName
+
+# Cria um novo projeto em Vite.
+npm create vite@latest project-name --template react
+npm create vite@latest project-name
+npm install lucide-react recharts tailwindcss @tailwindcss/vite

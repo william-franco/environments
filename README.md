@@ -3,36 +3,16 @@
 Settings of PATH in Environment Variables on Mac and Linux.
 
 
-### Mac:
+## Linux:
 
 ```
-# Android Studio Home
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# Add this of end the file .bashrc
 
-# Flutter Home
-export FLUTTER_HOME=$HOME/Library/Flutter/bin
-export PATH=$PATH:$FLUTTER_HOME
+# PATH Environments
 
-# Dart Home
-export DART_HOME=$HOME/Library/Dart/bin
-export PATH=$PATH:$DART_HOME
+# Refresh terminal with: source ~/.bashrc
+# Check the path with: echo $PATH
 
-# Java Home
-export JAVA_HOME=$HOME/Library/Java/JavaVirtualMachines/jdk-21/Contents/Home
-
-# NodeJs Home
-export NODEJS_HOME=$HOME/Library/NodeJs/bin
-export PATH=$NODEJS_HOME:$PATH
-```
-
-
-### Linux:
-
-```
 # Android Studio Home
 export ANDROID_HOME=$HOME/Development/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -68,17 +48,47 @@ export PATH=$PATH:$NODEJS_HOME/bin
 export DOTNET_ROOT=$HOME/Development/DotNet/
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT
 
+# Rust Home
+. "$HOME/.cargo/env"
+
 # Flatpaks
-alias android-studio="flatpak run com.google.AndroidStudio"
-alias chrome="flatpak run com.google.Chrome"
-alias code="flatpak run com.visualstudio.code"
-alias firefox="flatpak run org.mozilla.firefox"
-alias google-chrome="flatpak run com.google.Chrome"
-alias insomnia="flatpak run rest.insomnia.Insomnia"
-alias postman="flatpak run com.getpostman.Postman"
-alias qbittorrent="flatpak run org.qbittorrent.qBittorrent"
-alias spotify="flatpak run com.spotify.Client"
-alias vlc="flatpak run org.videolan.VLC"
+alias f-android-studio="flatpak run com.google.AndroidStudio"
+alias f-chrome="flatpak run com.google.Chrome"
+alias f-code="flatpak run com.visualstudio.code"
+alias f-firefox="flatpak run org.mozilla.firefox"
+alias f-google-chrome="flatpak run com.google.Chrome"
+alias f-insomnia="flatpak run rest.insomnia.Insomnia"
+alias f-postman="flatpak run com.getpostman.Postman"
+alias f-qbittorrent="flatpak run org.qbittorrent.qBittorrent"
+alias f-spotify="flatpak run com.spotify.Client"
+alias f-vlc="flatpak run org.videolan.VLC"
+alias f-zed="flatpak run dev.zed.Zed"
+```
+
+## Macos:
+
+```
+# Android Studio Home
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Flutter Home
+export FLUTTER_HOME=$HOME/Library/Flutter/bin
+export PATH=$PATH:$FLUTTER_HOME
+
+# Dart Home
+export DART_HOME=$HOME/Library/Dart/bin
+export PATH=$PATH:$DART_HOME
+
+# Java Home
+export JAVA_HOME=$HOME/Library/Java/JavaVirtualMachines/jdk-21/Contents/Home
+
+# NodeJs Home
+export NODEJS_HOME=$HOME/Library/NodeJs/bin
+export PATH=$NODEJS_HOME:$PATH
 ```
 
 
