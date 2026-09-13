@@ -1,6 +1,6 @@
 # Environments
 
-Settings of PATH in Environment Variables on Mac and Linux.
+PATH and shell environment templates for macOS and Linux, plus optional bootstrap scripts to set up a dev machine (Homebrew / apt, SDKs, and IDE tooling).
 
 ## Linux:
 
